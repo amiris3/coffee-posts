@@ -6,7 +6,7 @@ const Post: React.FC<PostItem> = ({ content, imgsrc }) => {
     return (
         <View style={styles.post}>
             <Text style={styles.postTitle}>{content}</Text>
-            <Image source={{uri: imgsrc ? imgsrc : ''}} accessibilityLabel="coffee image" style={styles.image} />
+            <Image source={{ uri: imgsrc ? imgsrc : '' }} accessibilityLabel="coffee image" style={styles.image} />
         </View>
     );
 };
@@ -18,11 +18,11 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
         color: '#000',
-        marginBottom: '10%'
+        marginBottom: '8%'
     },
     postTitle: {
         fontWeight: '600',
-        paddingBottom: 8
+        paddingBottom: '2%'
     },
     image: {
         width: win.width - 80,

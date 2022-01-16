@@ -1,5 +1,5 @@
 export interface PostItem {
     id?: Number,
-    content: String,
+    content: string,
     imgsrc: string
 }
