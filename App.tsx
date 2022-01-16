@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -6,19 +6,22 @@ import {
 } from 'react-native';
 
 import Post from './components/Post';
+import posts from './data/posts.json';
+import { PostItem } from './models/PostItem';
 
 const App = () => {
+  const [coffeePosts, setCoffeePosts] = useState(posts.coffeePosts);
 
   return (
     <SafeAreaView style={styles.container}>
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        contentContainerStyle={styles.list}>
-          <Post content='hello world' imgsrc='https://coffee.alexflipnote.dev/mVOd9yC1u3E_coffee.jpg'/>
-      </ScrollView>
+    <ScrollView contentContainerStyle={styles.list}>
+      {coffeePosts.map((post: PostItem) => {
+        return <Post key={'coffee-post-' + post.id} content={post.content} imgsrc={post.imgsrc}/>
+      })}
+    </ScrollView>
     </SafeAreaView>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {

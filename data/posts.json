@@ -1,0 +1,24 @@
+{
+    "coffeePosts": [
+        {
+            "id": 0,
+            "content": "Hello World",
+            "imgsrc": "https://coffee.alexflipnote.dev/mVOd9yC1u3E_coffee.jpg"
+        },
+        {
+            "id": 1,
+            "content": "Comment ça va ?",
+            "imgsrc": "https://coffee.alexflipnote.dev/Mae2nPlunxE_coffee.jpg"
+        },
+        {
+            "id": 2,
+            "content": "Il est 23 h 42",
+            "imgsrc": "https://coffee.alexflipnote.dev/c6aKO3jJus8_coffee.jpg"
+        },
+        {
+            "id": 3,
+            "content": "Quelle belle cafetière !",
+            "imgsrc": "https://coffee.alexflipnote.dev/dyIgBL1uSn4_coffee.jpg"
+        }
+    ]
+}
