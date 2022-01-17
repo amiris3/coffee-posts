@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
     },
     postTitle: {
         fontWeight: '600',
-        paddingBottom: '2%'
+        paddingBottom: '2%',
+        color: 'black'
     },
     image: {
         width: win.width - 80,
